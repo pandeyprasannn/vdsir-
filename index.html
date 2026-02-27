@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadugar Prince | The Master of Illusions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="magic-dust-bg"></div>
+
+    <audio id="princeAudio" src="prince audio.mp3" preload="auto"></audio>
+
+    <header class="luxury-nav">
+        <div class="logo-container" onclick="playAudio()">
+            <img src="price-logo.png" alt="Jadugar Prince Logo" class="brand-logo">
+        </div>
+        
+        <div class="mobile-menu-btn" onclick="toggleMenu(); playAudio();">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-links-elegant" id="navLinks">
+            <a href="#home" onclick="playAudio()">The Experience</a>
+            <a href="#about" onclick="playAudio()">The Magician</a>
+            <a href="#gallery" onclick="playAudio()">Gallery</a>
+            <a href="#videos" onclick="playAudio()">Cinema</a>
+            <a href="#contact" class="mobile-only-btn" onclick="playAudio()">Inquire Now</a>
+        </nav>
+        <a href="#contact" class="btn-gold desktop-only-btn" onclick="playAudio()">Inquire Now</a>
+    </header>
+
+    <section id="home" class="hero-cinematic">
+        <div class="hero-vignette"></div>
+        <div class="container hero-split">
+            <div class="hero-content-left">
+                <p class="subtitle-shimmer">INDIA'S YOUNGEST ILLUSIONIST</p>
+                <h1 class="title-monumental">Jadugar<br>Prince</h1>
+                <div class="hero-impressive-stats">
+                    <span>14+ Years Experience</span> • 
+                    <span>12,000+ Live Shows</span>
+                </div>
+                <p class="hero-elegant-text">Witness a mind-blowing spectacle that defies reality. Fast-paced, high-energy, and completely unforgettable.</p>
+                <div class="action-row">
+                    <a href="#contact" class="btn-gold-solid" onclick="playAudio()">Reserve a Date</a>
+                </div>
+            </div>
+            <div class="hero-visual-right">
+                <img src="prince solo transparent.png" alt="Jadugar Prince" class="hero-magician-img floating" onclick="playAudio()">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="prestige-section">
+        <div class="container prestige-grid">
+            <div class="prestige-image-wrapper">
+                <div class="gold-frame"></div>
+                <div class="image-placeholder-luxury">
+                    <img src="gallery/15.jpg" alt="Jadugar Prince Stage Act" class="fit-image" onclick="playAudio()">
+                </div>
+            </div>
+            <div class="prestige-text">
+                <h2 class="section-title-serif">A Decade of <br><em>Deception</em></h2>
+                <div class="gold-divider"></div>
+                <p>Jadugar Prince is not merely a performer; he is an architect of reality. Having practiced magic for over 14 years and performed around 12,000+ shows all over India, he crafts mind-blowing illusions that challenge the very fabric of logic.</p>
+                <p>Featuring stimulating visuals, talented male and female co-artists, comedy, and mesmerizing acts, his shows are an unparalleled blend of mystery, elegance, and energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="theater-header">
+                <h2 class="section-title-serif">Visual <em>Spectacle</em></h2>
+                <p>Moments of impossible reality caught on camera.</p>
+            </div>
+            <div class="masonry-grid">
+                <img src="gallery/16.jpg" alt="Magic Show Image 1" class="gallery-img" onclick="playAudio()">
+                <img src="gallery/18.jpg" alt="Magic Show Image 2" class="gallery-img" onclick="playAudio()">
+                <img src="gallery/19.jpg" alt="Magic Show Image 3" class="gallery-img" onclick="playAudio()">
+                <img src="gallery/22.jpg" alt="Magic Show Image 4" class="gallery-img" onclick="playAudio()">
+                <img src="gallery/23.jpg" alt="Magic Show Image 5" class="gallery-img" onclick="playAudio()">
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="theater-section">
+        <div class="container">
+            <div class="theater-header">
+                <h2 class="section-title-serif">The <em>Archives</em></h2>
+                <p>Glimpse into the world of illusion. Watch the live acts.</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-wrapper">
+                    <div class="video-cover" onclick="handleVideoClick(this)"></div>
+                    <iframe src="https://www.youtube.com/embed/4PqL5UwOu7s?si=WY4bAySEkIbqGz04" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-cover" onclick="handleVideoClick(this)"></div>
+                    <iframe src="https://www.youtube.com/embed/ASc8z7hhd_Y?si=gRr2mIDnoQ17Dacb" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-cover" onclick="handleVideoClick(this)"></div>
+                    <iframe src="https://www.youtube.com/embed/MPQlm5NnXCE?si=XuCAErkOFiaXwySP" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-cover" onclick="handleVideoClick(this)"></div>
+                    <iframe src="https://www.youtube.com/embed/-a4pGBtr5tU?si=qQ7_SJXL03UE47JV" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="youtube-cta-container">
+                <a href="https://www.youtube.com/@JadugarPrince24" target="_blank" class="btn-gold-solid yt-subscribe-btn" onclick="playAudio()">
+                    <i class="fab fa-youtube"></i> Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="booking-section">
+        <div class="container booking-container">
+            <div class="booking-header">
+                <h2 class="section-title-serif">Commission a <em>Performance</em></h2>
+                <p>Available for corporate galas, international tours, and elite private events.</p>
+            </div>
+            <form class="luxury-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name or Organization" required onclick="playAudio()">
+                    <input type="email" placeholder="Preferred Contact Email" required onclick="playAudio()">
+                </div>
+                <div class="form-row">
+                    <select required onclick="playAudio()">
+                        <option value="" disabled selected>Nature of Inquiry...</option>
+                        <option>Corporate Gala / Team Event</option>
+                        <option>School Group Booking</option>
+                        <option>Product Illusion / Promotion</option>
+                        <option>Private Bulk Booking</option>
+                    </select>
+                </div>
+                <textarea rows="4" placeholder="Share the details of your event..." required onclick="playAudio()"></textarea>
+                <button type="submit" class="btn-gold-solid submit-btn" onclick="playAudio()">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-social-circles">
+                <a href="https://www.facebook.com/jadugarprince24?mibextid=ZbWKwL" target="_blank" onclick="playAudio()"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=9111299135&text=Hi&type=phone_number&app_absent=0" target="_blank" onclick="playAudio()"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@JadugarPrince24" target="_blank" onclick="playAudio()"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/jadugarprince24/" target="_blank" onclick="playAudio()"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <div class="footer-legal-links">
+                <span onclick="openModal('privacyModal'); playAudio();">Privacy Policy</span>
+                <span onclick="openModal('termsModal'); playAudio();">Terms of service</span>
+                <span onclick="openModal('refundModal'); playAudio();">Refund Policy</span>
+            </div>
+
+            <div class="footer-address">
+                <p><strong>Jadugar Prince V D Bairagi</strong></p>
+                <p>Flat No. 43, Bhawsar Mohalla, Ward 21,</p>
+                <p>Shajapur, Madhya Pradesh, 465001</p>
+                <p class="footer-contact"><i class="fas fa-envelope"></i> jadugarprince0@gmail.com &nbsp;|&nbsp; <i class="fas fa-phone"></i> +91 9111299135</p>
+            </div>
+            <p class="copyright">© 2026 Jadugar Prince. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="privacyModal" class="legal-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('privacyModal'); playAudio();">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p class="effective-date">Effective Date: 25 July 2024</p>
+            <h3>1. Introduction</h3>
+            <p>Welcome to Jadugar Prince V D Bairagi. We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your information...</p>
+            <h3>2. Information We Collect</h3>
+            <p><strong>Personal Information:</strong> When you purchase tickets, we may collect name, email, phone, and payment details.<br>
+            <strong>Website Usage:</strong> We collect information about your interaction with our website, including IP addresses.</p>
+            <h3>3. How We Use Your Information</h3>
+            <p>To provide services, improve events, process tickets, and handle legal compliance.</p>
+            <h3>4. Contact Us</h3>
+            <p>Flat No. 43, Bhawsar Mohalla, Ward 21, Shajapur, Madhya Pradesh, 465001<br>jadugarprince0@gmail.com | +91 9111299135</p>
+        </div>
+    </div>
+
+    <div id="termsModal" class="legal-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('termsModal'); playAudio();">&times;</span>
+            <h2>Terms of Service</h2>
+            <p class="effective-date">Effective Date: 25 July 2024</p>
+            <h3>1. Introduction</h3>
+            <p>Welcome to Jadugar Prince V D Bairagi. These Terms govern your access to and use of our services.</p>
+            <h3>2. Ticket Purchase and Admission</h3>
+            <p><strong>Ticket Sales:</strong> All ticket sales are final. No refunds or exchanges unless canceled.<br>
+            <strong>Admission:</strong> You must present a valid ticket. Unauthorized duplication is prohibited.</p>
+            <h3>3. Event Conduct</h3>
+            <p>Disruptive behavior will not be tolerated. Photography/recording is prohibited unless authorized.</p>
+            <h3>10. Contact Us</h3>
+            <p>jadugarprince0@gmail.com | +91 9111299135</p>
+        </div>
+    </div>
+
+    <div id="refundModal" class="legal-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('refundModal'); playAudio();">&times;</span>
+            <h2>Refunds & Cancellations</h2>
+            <p class="effective-date">Effective Date: 25 July 2024</p>
+            <h3>1. Introduction</h3>
+            <p>Thank you for purchasing tickets. Please read our policy carefully.</p>
+            <h3>2. No Refunds Policy</h3>
+            <p><strong>All Sales Final:</strong> All ticket sales are final. No refunds will be issued for personal circumstances or weather.<br>
+            <strong>Non-Transferable:</strong> Tickets cannot be exchanged for other dates.</p>
+            <h3>3. Event Cancellations</h3>
+            <p>If we cancel an event, ticket holders can choose a full refund or exchange for a future event.</p>
+            <h3>8. Contact Us</h3>
+            <p>jadugarprince0@gmail.com | +91 9111299135</p>
+        </div>
+    </div>
+
+    <script>
+        // Global Audio Object
+        var audio = document.getElementById("princeAudio");
+
+        // System-level Audio function
+        function playAudio() {
+            // Check to prevent multiple overlapping plays from rapid clicks
+            if (!audio.paused) {
+                audio.currentTime = 0; // Reset to start before replaying
+            }
+            audio.play();
+        }
+
+        // Fix to scroll-to-top on mobile startup and play audio once
+        window.onload = function() {
+            window.scrollTo(0, 0); // Force the browser to start at the top
+            
+            // Try autoplay once. Browsers usually block this, but it doesn't hurt.
+            playAudio();
+
+            // FALLBACK FOR AUTOPLAY BLOCK: 
+            // Also add a listener on the entire body to play the audio once on the VERY FIRST USER INTERACTION
+            // of ANY kind (click, touch) as a proper workaround that browsers respect.
+            document.body.addEventListener('click', function playOnceHandler() {
+                playAudio();
+                document.body.removeEventListener('click', playOnceHandler); // Only run once
+            }, { once: true });
+        };
+
+        // Specialized audio handler for video grid. Detects first click, plays audio, then hides to show player.
+        function handleVideoClick(coverElement) {
+            coverElement.classList.add('hidden'); // This hides the overlay so next click goes to Youtube
+            playAudio();
+        }
+
+        // Mobile Hamburger Menu Toggle
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+
+        // Modal Functions (For Legal Links)
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+        // Close modal if clicking outside the box
+        window.onclick = function(event) {
+            if (event.target.classList.contains('legal-modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+</body>
+</html>
